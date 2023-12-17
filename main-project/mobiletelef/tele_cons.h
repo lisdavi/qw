@@ -3,12 +3,7 @@
 #ifndef PHONE_CALL_H
 #define PHONE_CALL_H
 
-struct time {
 
-    int hours;
-    int minutes;
-    int seconds;
-};
 struct date
 {
     int day;
@@ -19,12 +14,10 @@ struct date
 struct phone_call
 {
     char phone_number[PHONE_NUMBER_SIZE];
-    time call_time;
+    char call_time[TIME_SIZE];
     date call_date;
     char duration[DURATION_SIZE];
     char tariff[TARIFF_SIZE];
     float cost;
 };
-
-
 #endif
